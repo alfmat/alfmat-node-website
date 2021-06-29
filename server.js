@@ -24,6 +24,10 @@ app.get('/bio', (req, res) => {
   res.send('Work in progress!')
 });
 
+app.get('/.well-known/pki-validation/7A307C8FEB3F30F8C595F20AF75A4742.txt', (req, res) => {
+  res.sendFile(path.join(__dirname, '/public/7A307C8FEB3F30F8C595F20AF75A4742.txt'))
+})
+
 app.listen(PORT, HOST);
 
 console.log('listening!');
