@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '/public/index.html'));
 });
 
-app.get('/resume', (req, res) => {
+app.get('/Alfred_Mathew_Resume', (req, res) => {
   res.sendFile(path.join(__dirname, '/public/Alfred_Mathew_Resume.pdf'))
 });
 
